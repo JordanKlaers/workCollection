@@ -15,7 +15,8 @@ module.exports = {
 	},
 	devtool: 'inline-source-map',
 	devServer: {
-		port: 9000,
+		port: 3005,
+		contentBase: './'
 	},
 	resolve: {
 		extensions: ['.js', '.vue', '.json', '.scss'],
@@ -76,7 +77,7 @@ module.exports = {
 			}
 		]
 	},
-	mode: "production",
+	mode: "development",
 	plugins: [
 		new HtmlWebpackPlugin({
 			title: 'Output Management',
@@ -90,6 +91,6 @@ module.exports = {
 	output: {
 		filename: '[name].bundle.js',
 		path: path.resolve(__dirname, 'dist/'),
-		publicPath: './'
+		publicPath: ''
 	}
 };

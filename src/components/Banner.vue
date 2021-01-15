@@ -1,6 +1,6 @@
 <template>
 	<div id="banner" class="p-30">
-		<span class="ft-xtr-bold ft-sz-20">Where in the world?</span>
+		<span class="ft-xtr-bold ft-sz-20">Work Collection</span>
 		<span
 			class="ft-normal m-lft-auto ft-sz-18 dark-mode"
 			@click="clickHandler">
